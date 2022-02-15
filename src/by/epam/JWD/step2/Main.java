@@ -25,7 +25,7 @@ public class Main {
         view.showArr(array2);
         view.showArr(logic.putArray(array1, array2, k));
 
-        /* task10*/
+        /* task10 */
         view.showArrBig(logic.sortArray(input.inputScanner()));
     }
 }
