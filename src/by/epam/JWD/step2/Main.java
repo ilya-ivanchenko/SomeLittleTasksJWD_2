@@ -9,15 +9,13 @@ public class Main {
         /* task4 */
         int x = 0;
         int y = -1;
-        boolean check = logic.pointBelong(x, y);
-        view.showIsTrue(check);
+        view.showIsTrue(logic.pointBelong(x, y));
 
         /* task2 */
         int a = input.inputRandom();
         int b = input.inputRandom();
         int c = input.inputRandom();
-        double result = logic.formula(a, b, c);
-        view.showResult(result);
+        view.showResult(logic.formula(a, b, c));
 
         /* task9 */
         int k = 3;
@@ -25,12 +23,9 @@ public class Main {
         view.showArr(array1);
         int[] array2 = input.inputScannerArray();
         view.showArr(array2);
-        int[] array3 = logic.putArray(array1, array2, k);
-        view.showArr(array3);
+        view.showArr(logic.putArray(array1, array2, k));
 
         /* task10*/
-        int[][] array = input.inputScanner();
-        int[][] arrayNew = logic.sortArray(array);
-        view.showArrBig(arrayNew);
+        view.showArrBig(logic.sortArray(input.inputScanner()));
     }
 }
