@@ -13,7 +13,7 @@ public class Main {
         view.showIsTrue(check);
 
         /* task2 */
-        int a = input.inputRandom();
+        int a = input.inputRandom();;
         int b = input.inputRandom();
         int c = input.inputRandom();
         double result = logic.formula(a, b, c);
