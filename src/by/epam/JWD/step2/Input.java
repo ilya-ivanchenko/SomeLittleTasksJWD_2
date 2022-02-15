@@ -43,5 +43,6 @@ public class Input {
         int s = sc.nextInt();
         int array[][] = new int[s][s];
         return array;
+       // System.out.println();
     }
 }
