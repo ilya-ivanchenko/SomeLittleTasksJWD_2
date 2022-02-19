@@ -12,9 +12,10 @@ public class Input {
     }
 
     public int[] inputScannerArray() {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите размерность массива: ");
-        while (!sc.hasNextDouble()) {
+        while (!sc.hasNextInt()) {
             sc.next();
             System.out.print("Вводите только целые числа: ");
         }
@@ -23,7 +24,7 @@ public class Input {
 
         for (int i = 0; i < arr.length; i++) {
             System.out.print("Введите " + i + " элемент массива: ");
-            while (!sc.hasNextDouble()) {
+            while (!sc.hasNextInt()) {
                 sc.next();
                 System.out.print("Вводите только целые числа: ");
             }
@@ -33,9 +34,10 @@ public class Input {
     }
 
     public int[][] inputScanner() {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите размер матрицы n*n: ");
-        while (!sc.hasNextDouble()) {
+        while (!sc.hasNextInt()) {
             sc.next();
             System.out.print("Вводите только целые числа: ");
         }
